@@ -5,8 +5,6 @@
 - [TECHNOLOGIES USED](#TECHNOLOGIES-USED)
 - [SYSTEM ARCHITECTURE](#SYSTEM-ARCHITECTURE)
 - [INSTALLATION GUIDE](#INSTALLATION-GUIDE)
-- [Model Building](#modelbuilding)
-- [Model Performance](#modelperformance)
 
 ## ABSTRACT
 This project is a Geospatial Mapping and Analysis System developed for a company to facilitate Geofencing, Territorial Mapping, and Enforcement while enabling data-driven decision-making at the district, Local Government Area (LGA), and state levels.
@@ -88,14 +86,20 @@ This will install all necessary libraries, including:
 
 4. Add Your GeoJSON Data
 Place your GeoJSON files in the data/ directory
+```
+mkdir data
+mv /path/to/your/nigeria_lga.geojson data/
+mv /path/to/your/nigeria_state.geojson data/
+mv /path/to/your/nigeria_district.geojson data/
+```
 
-5. Run the Flask Application
+6. Run the Flask Application
 ```
 python app.py
 ```
 You should see output like this: Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 
-6.
+6. Open the Application in Your Browser: The interactive map should now be running. 
 
 
 
