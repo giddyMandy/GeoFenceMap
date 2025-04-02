@@ -4,7 +4,7 @@
 - [OBJECTIVES](#OBJECTIVES)
 - [TECHNOLOGIES USED](#TECHNOLOGIES-USED)
 - [SYSTEM ARCHITECTURE](#SYSTEM-ARCHITECTURE)
-- [Feature](#feature)
+- [INSTALLATION GUIDE](#INSTALLATION-GUIDE)
 - [Model Building](#modelbuilding)
 - [Model Performance](#modelperformance)
 
@@ -25,7 +25,7 @@ The system integrates interactive mapping using Flask, Folium, and GeoJSON datas
 - Geospatial Data: Information that describes objects, events, or other features with a location on the Earth's surface. In this project, GeoJSON files store Nigeria’s geographical boundaries.
 - State: The highest administrative division within Nigeria, consisting of multiple Local Government Areas (LGAs). Nigeria has 36 states and the Federal Capital Territory (FCT), each with its own government structure.
 - Local Government Area (LGA): A subdivision of a state used for administrative purposes. Nigeria has 774 LGAs, each with a governing body responsible for local governance.
-- District: sSmaller subdivisions within an LGA, often used for planning, governance, and data analysis at a more localized level.
+- Districts: Smaller subdivisions within an LGA, often used for planning, governance, and data analysis at a more localized level.
 - Flask: A lightweight Python web framework used to build the backend API that processes geospatial data and serves dynamic map updates.
 - Folium: A Python library for interactive map visualization, which integrates with Leaflet.js to render geo-referenced data directly in a web application.
 - GeoPandas: A Python library that extends Pandas to handle geospatial data, allowing operations such as spatial filtering, boundary calculations, and data merging.
@@ -53,6 +53,14 @@ This project leverages GeoPandas and Folium to process spatial data and render i
 - GeoPandas: Reads and manipulates the GeoJSON dataset, extracting relevant state, LGA, and district boundaries.
 - Folium: Converts the processed geospatial data into an interactive map.
 
+  ## INSTALLATION GUIDE
+  This guide provides step-by-step instructions to set up the Geospatial Mapping and Analysis System on your local machine.
+1. Prerequisites
+Before running the project, ensure you have the following installed:
+- Python 3.8+
+- pip (Python package manager)
+- Virtual environment (recommended)
+- Git (for version control)
 
 
 
