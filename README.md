@@ -62,5 +62,9 @@ Before running the project, ensure you have the following installed:
 - Virtual environment (recommended)
 - Git (for version control)
 
+2. Create a Virtual Environment (Optional but Recommended)
+   python -m venv venv
+
+
 
 
