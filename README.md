@@ -63,7 +63,40 @@ Before running the project, ensure you have the following installed:
 - Git (for version control)
 
 2. Create a Virtual Environment (Optional but Recommended)
+   ```
    python -m venv venv
+   ```
+Activate the virtual environment:
+
+Windows:
+```
+venv\Scripts\activate
+```
+Mac/Linux:
+```
+source venv/bin/activate
+```
+3. Install Dependencies
+   ```
+   pip install -r requirements.txt
+   ```
+This will install all necessary libraries, including:
+- Flask (Web framework)
+- Folium (Mapping visualization)
+- GeoPandas (Spatial data handling)
+- Shapely (Geometric operations)
+
+4. Add Your GeoJSON Data
+Place your GeoJSON files in the data/ directory
+
+5. Run the Flask Application
+```
+python app.py
+```
+You should see output like this: Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+
+6.
+
 
 
 
