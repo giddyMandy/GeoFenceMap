@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nigeria State & LGA Map</title>
+    <script src="{{ url_for('static', filename='main.js') }}" defer></script>
+</head>
+<body>
+    <h1>Select a State and LGA to View</h1>
+
+    <label for="state-select">Choose a State:</label>
+    <select id="state-select">
+        <option value="">--Select a State--</option>
+        {% for state in states %}
+        <option value="{{ state }}">{{ state }}</option>
+        {% endfor %}
+    </select>
+
+    <label for="lga-select">Choose an LGA:</label>
+    <select id="lga-select" disabled>
+        <option value="">--Select an LGA--</option>
+    </select>
+    
+    <label for="district-select">Choose a District:</label>
+    <select id="district-select" disabled>
+        <option value="">--Select a District--</option>
+    </select>
+
+    <div id="map-container">
+        <iframe id="map-frame" src="static/map.html" width="100%" height="600px" style="border:none;"></iframe>
+    </div>
+</body>
+</html>
+
